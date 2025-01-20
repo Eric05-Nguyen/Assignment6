@@ -1,0 +1,24 @@
+package arraylist;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Ex3 {
+
+    public static void main(String[] args) {
+
+        ArrayList<Double> giaSanPham = new ArrayList<>();
+        Scanner nhap = new Scanner(System.in);
+        System.out.print("Nhap so gia cua mang :");
+        int n = nhap.nextInt();
+        for (int i = 0; i < n; i++) {
+            System.out.println("gia tien thu " + (i + 1) + " is :");
+            double gia = nhap.nextDouble();
+            giaSanPham.add(gia);
+
+        }
+        for (int i = 0; i < giaSanPham.size(); i++) {
+            System.out.println(giaSanPham.get(i) + " VND");
+        }
+    }
+}
