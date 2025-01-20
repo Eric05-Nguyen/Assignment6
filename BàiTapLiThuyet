@@ -1,0 +1,24 @@
+### 1. **ArrayList là gì? Sự giống và khác nhau giữa ArrayList và Array**
+
+**ArrayList** là một lớp trong Java thuộc gói `java.util`, dùng để lưu trữ danh sách phần tử với kích thước thay đổi linh hoạt.
+
+#### **Sự giống và khác nhau giữa ArrayList và Array**
+
+| **Tiêu chí**            | **Array**                   | **ArrayList**            |
+|-------------------------|-----------------------------|--------------------------|
+| **Kích thước**          | Cố định                    | Thay đổi linh hoạt       |
+| **Loại dữ liệu**        | Hỗ trợ kiểu nguyên thủy và đối tượng | Chỉ lưu trữ đối tượng (wrapper class như `Integer`, `Double`) |
+| **Phương thức tiện ích**| Không có                    | Có các phương thức như `add()`, `remove()`, `get()`,... |
+| **Hiệu năng**           | Nhanh hơn                   | Chậm hơn vì phải điều chỉnh kích thước và hỗ trợ nhiều phương thức |
+| **Tính linh hoạt**      | Kích thước cố định          | Kích thước linh hoạt, có thể thay đổi khi thêm/xóa phần tử |
+
+### 2. **Các method phổ biến khi thao tác với ArrayList**
+
+- **`add(E e)`**: Thêm phần tử vào cuối danh sách.
+- **`get(int index)`**: Lấy phần tử tại chỉ số `index`.
+- **`set(int index, E element)`**: Thay thế phần tử tại chỉ số `index`.
+- **`remove(int index)`**: Xóa phần tử tại chỉ số `index`.
+- **`size()`**: Trả về số phần tử trong ArrayList.
+- **`contains(Object o)`**: Kiểm tra phần tử có tồn tại không.
+- **`clear()`**: Xóa tất cả phần tử trong ArrayList.
+- **`isEmpty()`**: Kiểm tra ArrayList có rỗng không.
