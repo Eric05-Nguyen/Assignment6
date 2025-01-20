@@ -1,0 +1,21 @@
+package arraylist;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Ex4 {
+    public static void main(String[] args) {
+        ArrayList<String> nameCity = new ArrayList<>();
+        Scanner nhap = new Scanner(System.in);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Thanh pho thu " + (i + 1) + " la :");
+            String ten = nhap.nextLine();
+            nameCity.add(ten);
+        }
+        if (nameCity.contains("London")) {
+            System.out.println("Co chua ten thanh pho");
+        } else {
+            System.out.println("khong chua ten thanh pho");
+        }
+    }
+}
