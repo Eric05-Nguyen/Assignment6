@@ -1,0 +1,19 @@
+package arraylist;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Ex2 {
+    public static void main(String[] args) {
+        ArrayList<String> mauSac = new ArrayList<>();
+        Scanner nhap = new Scanner(System.in);
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Mau sac thu " + (i + 1) + " la :");
+            String mau = nhap.nextLine();
+            mauSac.add(mau);
+        }
+        System.out.println("Mau sac da nhap la :" + mauSac);
+        mauSac.set(1, "yellow");
+        System.out.println("Danh sac cac mau da cap nhat :" + mauSac);
+    }
+}
